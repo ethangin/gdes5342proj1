@@ -1,0 +1,132 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.word_container {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  height: 60%;
+  top: 20%;
+}
+
+.letter {
+  font-family: 'Lexend Mega', sans-serif;
+  font-size: 6vw;
+  /background: red;
+  width: 10%;
+  float: left;
+  text-align: center;
+  /animation-timing-function: ease-out;
+}
+
+.m1, .e1, .m2 {
+  position: absolute;
+  animation: mem_fade 4s infinite;
+}
+
+.m1 {
+  position: absolute;
+  left: 20%;
+}
+
+.e1 {
+  position: absolute;
+  left: 30%;
+}
+
+.m2 {
+  position: absolute;
+  left: 40%;
+}
+
+.o {
+  position: absolute;
+  left: 50%;
+  animation: o_fade 4s infinite;
+}
+
+.r1 {
+  position: relative;
+  left: 60%;
+  animation: r1_fade 4s infinite;
+}
+
+.r2 {
+  position: absolute;
+  left: 0%;
+  animation: r2_fade 4s infinite;
+}
+
+.y {
+  position: absolute;
+  left: 70%;
+  animation: y_fade 4s infinite;
+}
+
+.b, .e2, .e3 {
+  opacity: 0;
+  position: absolute;
+}
+
+.e2 {
+  left: 10%;
+  animation: e2_fade 4s infinite;
+}
+
+.e3 {
+  left: 60%;
+  animation: e3_fade 4s infinite;
+}
+
+.b {
+  left: 50%;
+  animation: b_fade 4s infinite;
+}
+
+@keyframes b_fade {
+  0%, 100%, 50% { opacity: 0; color: white; }
+  25% { opacity: 1; color: blue; }
+}
+
+@keyframes o_fade {
+  0%, 100%, 50% { opacity: 0; color: white; }
+  75% { opacity: 1; color: red; }
+}
+
+@keyframes mem_fade {
+  0%, 100%, 50% { opacity: 0.5; color: black; }
+  75% { opacity: 1; color: red; }
+  25% { opacity: 1; color: blue; }
+}
+
+@keyframes y_fade {
+  0%, 100%, 50% { opacity: 0; color: white; }
+  75% { opacity: 1; color: red; }
+}
+
+@keyframes r2_fade {
+  0%, 100% { opacity: 0; color: white; top: -15%; }
+  25% { opacity: 1; color: blue; top: 0%;}
+  50% { opacity: 0; color: white; top: 15%; }
+}
+
+@keyframes r1_fade {
+  0%, 100%, 50% {opacity: 0.5; color: black; left: 60%; }
+  25% { opacity: 1; left: 70%; color: blue; }
+  75% { opacity: 1; left: 60%; color: red; }
+}
+
+@keyframes e2_fade {
+  0%, 100% { opacity: 0; color: white; font-size: 1vw; }
+  25% { opacity: 1; color: blue; font-size: 6vw; }
+  40% { opacity: 0; color: white; font-size: 1vw; }
+}
+
+@keyframes e3_fade {
+  0%, 100%, 50% { opacity: 0; color: white; }
+  25% { opacity: 1; color: blue; }
+}
